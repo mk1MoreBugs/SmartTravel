@@ -9,6 +9,7 @@ lifecycleRuntimeKtx = "2.7.0"
 activityCompose = "1.8.2"
 composeBom = "2024.04.00"
 lifecycleViewmodelCompose = "2.7.0"
+mapsMobile = "4.5.1-lite"
 room = "2.6.1"
 ksp = "1.9.22-1.0.16"
 truthVersion = "1.4.2"
@@ -31,6 +32,7 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-room-room-runtime = { group = "androidx.room", name = "room-runtime",  version.ref = "room"}
 androidx-room-room-compiler = { group = "androidx.room", name = "room-compiler",  version.ref = "room"}
+maps-mobile = { module = "com.yandex.android:maps.mobile", version.ref = "mapsMobile" }
 truth = { module = "com.google.truth:truth", version.ref = "truthVersion" }
 
 [plugins]

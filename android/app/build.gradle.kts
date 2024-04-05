@@ -1,8 +1,15 @@
+import java.io.FileInputStream
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-    //alias(libs.plugins.)
 }
+
+
+val mapkitApiKeyFile = rootProject.file("local.properties")
+val mapkitApiKeyProperties = Properties()
+mapkitApiKeyProperties.load(FileInputStream(mapkitApiKeyFile))
 
 
 android {
@@ -20,6 +27,8 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+        val mapkitApiKey = mapkitApiKeyProperties.getProperty("MAPKIT_API_KEY")
+        resValue("string", "MAPKIT_API_KEY", mapkitApiKey)
     }
 
     buildTypes {
@@ -74,4 +83,5 @@ dependencies {
     implementation(libs.androidx.room.room.runtime)
     annotationProcessor(libs.androidx.room.room.compiler)
 
+    implementation(libs.maps.mobile)
 }
