@@ -14,7 +14,6 @@ class HomeViewModel : ViewModel() {
     private val _uiState = MutableStateFlow(HomeUiState())
     val uiState: StateFlow<HomeUiState> = _uiState.asStateFlow()
     init {
-
         getData()
     }
 
@@ -30,19 +29,30 @@ class HomeViewModel : ViewModel() {
                 currentState.copy(
                     items = listOf(
                         Item(
-                            photo = R.drawable.comfort,
-                            name = "Комфорт",
-                            type = "Стандартный",
-                            price = 3000,
-                            personCount = 2,
+                            photo = R.drawable.dzhubga,
+                            city = "Джубга",
+                            type = "Гэмплинг",
                         ),
                         Item(
-                            photo = R.drawable.standart,
-                            name = "Стандарт",
-                            type = "Стандартный",
-                            price = 2000,
-                            personCount = 2,
-                        )
+                            photo = R.drawable.dzhanhot,
+                            city = "Джанхот",
+                            type = "Гэмплинг",
+                        ),
+                        Item(
+                            photo = R.drawable.divnomorskoe,
+                            city = "Дивноморское",
+                            type = "Кемпинг",
+                        ),
+                        Item(
+                            photo = R.drawable.anapa,
+                            city = "Анапа",
+                            type = "Кемпинг",
+                        ),
+                        Item(
+                            photo = R.drawable.vityazevo,
+                            city = "Витязево",
+                            type = "Гэмплинг",
+                        ),
                     ),
                     fetch = false,
                 )
@@ -62,8 +72,6 @@ data class HomeUiState(
 
 data class Item(
     val photo: Int,
-    val personCount: Int,
-    val price: Int,
-    val name: String,
+    val city: String,
     val type: String,
 )
