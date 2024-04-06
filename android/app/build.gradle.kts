@@ -9,11 +9,6 @@ plugins {
 }
 
 
-val mapkitApiKeyFile = rootProject.file("local.properties")
-val mapkitApiKeyProperties = Properties()
-mapkitApiKeyProperties.load(FileInputStream(mapkitApiKeyFile))
-
-
 android {
     namespace = "hackathon.smarttravel"
     compileSdk = 34
@@ -29,8 +24,6 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
-        val mapkitApiKey = mapkitApiKeyProperties.getProperty("MAPKIT_API_KEY")
-        resValue("string", "MAPKIT_API_KEY", mapkitApiKey)
     }
 
     buildTypes {
