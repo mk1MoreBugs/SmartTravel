@@ -21,7 +21,7 @@ fun BookingScreen(
         contentAlignment = Alignment.BottomCenter,
     ) {
         Button(
-            modifier = Modifier.size(300.dp, 100.dp),
+            modifier = Modifier.size(300.dp, 75.dp),
             shape = RoundedCornerShape(10.dp),
             onClick = onNavigateToHome,
         ) {
