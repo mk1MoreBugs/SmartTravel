@@ -1,5 +1,6 @@
 [versions]
 agp = "8.3.1"
+hiltAndroidCompiler = "2.45"
 kotlin = "1.9.0"
 coreKtx = "1.12.0"
 junit = "4.13.2"
@@ -10,6 +11,7 @@ activityCompose = "1.8.2"
 composeBom = "2024.04.00"
 lifecycleViewmodelCompose = "2.7.0"
 mapsMobile = "4.5.1-lite"
+navigationCompose = "2.7.7"
 room = "2.6.1"
 ksp = "1.9.22-1.0.16"
 truthVersion = "1.4.2"
@@ -17,7 +19,10 @@ webkit = "1.10.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 androidx-webkit = { module = "androidx.webkit:webkit", version.ref = "webkit" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidCompiler" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -41,3 +46,4 @@ truth = { module = "com.google.truth:truth", version.ref = "truthVersion" }
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndroidCompiler" }
