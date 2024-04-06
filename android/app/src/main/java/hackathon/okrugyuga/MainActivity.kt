@@ -24,28 +24,7 @@ class MainActivity : ComponentActivity() {
         MapKitFactory.getInstance().onStart()
 
         setContent {
-            OkrugYugaTheme {
-                Box(modifier = Modifier.fillMaxSize()) {
-                    val url =
-                        "https://reservationsteps.ru/rooms/index/b7ed77bb-4b6d-4a74-84cc-b705afdc8976?lang=ru&colorSchemePreview=0&onlyrooms=&name=&surname=&email=&phone=&orderid=&servicemode=0&firstroom=0&vkapp=&insidePopup=0&dfrom=&dto=&adults=1"
-
-                    AndroidView(
-                        factory = {
-                            WebView(it).apply {
-                                layoutParams = ViewGroup.LayoutParams(
-                                    ViewGroup.LayoutParams.MATCH_PARENT,
-                                    ViewGroup.LayoutParams.MATCH_PARENT
-                                )
-                                this.settings.apply {
-                                    javaScriptEnabled = true
-                                }
-                                loadUrl(url)
-                                webViewClient = WebViewClient()
-                            }
-                        }
-                    )
-                }
-            }
+            OkrugYugaApp()
         }
     }
 }
