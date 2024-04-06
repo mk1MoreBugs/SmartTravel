@@ -86,7 +86,8 @@ fun CardItem(
                 )
                 FilledTonalButton(
                     modifier = Modifier
-                        .size(width = 150.dp, height = 70.dp),
+                        .size(width = 150.dp, height = 70.dp)
+                        .padding(bottom = 15.dp),
                     shape = RoundedCornerShape(10.dp),
                     onClick = onNavigateToItem,
                 ) {
