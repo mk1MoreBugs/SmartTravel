@@ -1,4 +1,4 @@
-package hackathon.okrugyuga
+package hackathon.smarttravel
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

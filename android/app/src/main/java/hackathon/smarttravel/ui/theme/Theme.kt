@@ -1,4 +1,4 @@
-package hackathon.okrugyuga.ui.theme
+package hackathon.smarttravel.ui.theme
 
 import android.app.Activity
 import android.os.Build

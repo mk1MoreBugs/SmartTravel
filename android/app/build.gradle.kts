@@ -15,11 +15,11 @@ mapkitApiKeyProperties.load(FileInputStream(mapkitApiKeyFile))
 
 
 android {
-    namespace = "hackathon.okrugyuga"
+    namespace = "hackathon.smarttravel"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "hackathon.okrugyuga"
+        applicationId = "hackathon.smarttravel"
         minSdk = 31
         targetSdk = 34
         versionCode = 1

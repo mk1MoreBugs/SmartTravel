@@ -1,11 +1,11 @@
-package hackathon.okrugyuga
+package hackathon.smarttravel
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import hackathon.okrugyuga.ui.booking.BookingScreen
-import hackathon.okrugyuga.ui.home.HomeScreen
+import hackathon.smarttravel.ui.booking.BookingScreen
+import hackathon.smarttravel.ui.home.HomeScreen
 
 object MainDestinations {
     const val HOME_ROUTE = "home"
@@ -14,7 +14,7 @@ object MainDestinations {
 
 
 @Composable
-fun OkrugYugaNavHost(
+fun SmartTravelNavHost(
     navController: NavHostController,
     startDestination: String,
     ) {

@@ -1,4 +1,4 @@
-package hackathon.okrugyuga
+package hackathon.smarttravel
 
 import org.junit.Test
 

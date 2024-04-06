@@ -1,8 +1,8 @@
-package hackathon.okrugyuga.ui.home
+package hackathon.smarttravel.ui.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import hackathon.okrugyuga.R
+import hackathon.smarttravel.R
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

@@ -1,4 +1,4 @@
-package hackathon.okrugyuga
+package hackathon.smarttravel
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -15,7 +15,7 @@ class MainActivity : ComponentActivity() {
         MapKitFactory.getInstance().onStart()
 
         setContent {
-            OkrugYugaApp()
+            SmartTravelApp()
         }
     }
 }
