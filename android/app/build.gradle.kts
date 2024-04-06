@@ -84,4 +84,6 @@ dependencies {
     annotationProcessor(libs.androidx.room.room.compiler)
 
     implementation(libs.maps.mobile)
+
+    implementation(libs.androidx.webkit)
 }
