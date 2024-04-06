@@ -37,7 +37,22 @@ class HomeViewModel : ViewModel() {
                             photo = R.drawable.dzhanhot,
                             city = "Джанхот",
                             type = "Гэмплинг",
-                        )
+                        ),
+                        Item(
+                            photo = R.drawable.divnomorskoe,
+                            city = "Дивноморское",
+                            type = "Кемпинг",
+                        ),
+                        Item(
+                            photo = R.drawable.anapa,
+                            city = "Анапа",
+                            type = "Кемпинг",
+                        ),
+                        Item(
+                            photo = R.drawable.vityazevo,
+                            city = "Витязево",
+                            type = "Гэмплинг",
+                        ),
                     ),
                     fetch = false,
                 )

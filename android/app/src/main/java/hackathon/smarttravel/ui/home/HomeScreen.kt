@@ -57,6 +57,7 @@ fun CardItem(
     onNavigateToItem: () -> Unit,
 ) {
     val paddingBottom = 30.dp
+    val paddingTop = 15.dp
     ElevatedCard(
         modifier = Modifier.fillMaxWidth(),
         elevation = CardDefaults.cardElevation(10.dp),
@@ -75,7 +76,7 @@ fun CardItem(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    modifier = Modifier.padding(bottom = paddingBottom),
+                    modifier = Modifier.padding(bottom = paddingBottom, top = paddingTop),
                     text = item.city,
                 )
                 Text(
